@@ -52,24 +52,39 @@ console.log(judeHeightBMI());
 
 //Test Data: 2
 
-function JudeBMI(mass,height){
-    let BMI = mass / height ** 2;
-    return BMI.toFixed(2);
-}
-console.log(JudeBMI(95,1.88));
+// Calculating Jude BMI
+let JudeMass = 95;
+let JudeHeight = 1.88;
 
-function BenBMI(mass,height){
-let BMI = mass / height ** 2;
-return BMI.toFixed(2);
-}
-console.log(BenBMI(85,1.76));
+let JudeBMI = JudeMass / JudeHeight ** 2;
+JudeBMI = 95 / 1.88 ** 2;
+console.log(JudeBMI.toFixed(2));
 
-function BenHeightBMI(){
-    if(BenBMI > JudeBMI){
+// function JudeBMI(mass,height){
+//     let BMI = mass / height ** 2;
+//     return BMI.toFixed(2);
+// }
+// console.log(JudeBMI(95,1.88));
+
+let BenMass = 85;
+let BenHeight = 1.76;
+
+let BenBMI = BenMass / BenHeight ** 2;
+BenBMI = 85 / 1.76 ** 2;
+console.log(BenBMI.toFixed(2));
+
+// function BenBMI(mass,height){
+// let BMI = mass / height ** 2;
+// return BMI.toFixed(2);
+// }
+// console.log(BenBMI(85,1.76));
+
+function JudeHeightBMI(){
+    if(JudeBMI > BenBMI){
         return true;
     }
     else{
         return false;
     }
 }
-console.log(BenHeightBMI());
+console.log(JudeHeightBMI());
