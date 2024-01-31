@@ -2,71 +2,57 @@
 //Test Data: 1
 
 // Calculating Jude BMI
-let judeMass = 78;
-let judeHeight = 1.69;
+let judeMass1 = 78;
+let judeHeight1 = 1.69;
 
-let judeBMI = judeMass / judeHeight ** 2;
-judeBMI = 78 / 1.69 ** 2;
-console.log(judeBMI);
+let judeBMI1 = judeMass1 / judeHeight1 ** 2;
+console.log(judeBMI1.toFixed(2));
 
 // Calculating Ben BMI
 
-let benMass = 92;
-let benHeight = 1.95;
+let benMass1 = 92;
+let benHeight1 = 1.95;
 
-let benBMI = benMass / benHeight ** 2;
-benBMI = 92 / 1.95 ** 2;
-console.log(benBMI);
+let benBMI1 = benMass1 / benHeight1 ** 2;
+console.log(benBMI1.toFixed(2));
  
 // Comparing Jude and Ben BMI
 
-function judeHeightBMI(){
-    if(judeBMI > benBMI){
+function judeHeightBMI1(judeBMI1, benBMI1){
+    if(judeBMI1 > benBMI1){
         return true
     }
     else{
         return false;
     }
 }
-console.log(judeHeightBMI());
+console.log(judeHeightBMI1());
 
 //Test Data: 2
 
 // Calculating Jude BMI
-let JudeMass = 95;
-let JudeHeight = 1.88;
+let judeMass2 = 95;
+let judeHeight2 = 1.88;
 
-let JudeBMI = JudeMass / JudeHeight ** 2;
-JudeBMI = 95 / 1.88 ** 2;
-console.log(JudeBMI.toFixed(2));
+let judeBMI2 = judeMass2 / judeHeight2 ** 2;
+console.log(judeBMI2.toFixed(2));
 
-// function JudeBMI(mass,height){
-//     let BMI = mass / height ** 2;
-//     return BMI.toFixed(2);
-// }
-// console.log(JudeBMI(95,1.88));
 
 // Calculating Ben BMI
-let BenMass = 85;
-let BenHeight = 1.76;
+let benMass2 = 85;
+let benHeight2 = 1.76;
 
-let BenBMI = BenMass / BenHeight ** 2;
-BenBMI = 85 / 1.76 ** 2;
-console.log(BenBMI.toFixed(2));
-
-// function BenBMI(mass,height){
-// let BMI = mass / height ** 2;
-// return BMI.toFixed(2);
-// }
-// console.log(BenBMI(85,1.76));
+let benBMI2 = benMass2 / benHeight2 ** 2;
+benBMI2 = 85 / 1.76 ** 2;
+console.log(benBMI2.toFixed(2));
 
 // Comparing Jude and Ben BMI
-function JudeHeightBMI(){
-    if(JudeBMI > BenBMI){
+function judeHeightBMI2(){
+    if(judeBMI2 > benBMI2){
         return true;
     }
     else{
         return false;
     }
 }
-console.log(JudeHeightBMI());
+console.log(judeHeightBMI2());
